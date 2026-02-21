@@ -1,7 +1,2 @@
 # My-Portfolio-web-page
-git init
-git add README.md
-git commit -m "first commit"
-git branch -M main
-git remote add origin https://github.com/mohankrishna117/My-Portfolio-web-page.git
-git push -u origin main
+Used many different technolygs and also used AI gpt's for builting

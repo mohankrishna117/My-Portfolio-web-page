@@ -1,0 +1,22 @@
+my-image{
+    width:"200";
+    height: "200";
+}
+body{
+    background-color: rgb(249, 66, 0);
+}
+.edu {
+    padding: 30px;
+    background-color: #e3f2fd;
+    border-radius: 10px;
+}
+
+.edu h2 {
+    font-size: 32px;
+    color: #0d47a1;
+}
+
+.edu li {
+    font-size: 20px;
+    color: #1a237e;
+}
