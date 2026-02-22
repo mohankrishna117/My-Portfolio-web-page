@@ -1,36 +1,128 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Ommi Mohan Krishan — Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-    <h1>Hi,This is Mohan</h1>
-    <img src="c:\Users\mohan\Downloads\image_dp.webp"alt="IMAGE" class="my-image" width="200" height="200" >
-    <p>AI Engineer and Full Stack Web Developer with experience building intelligent, scalable, and user-centric applications. Passionate about solving real-world problems using modern AI technologies and robust web architectures.</p>
-    <div class="skills_">
-        <h2>Programming languages</h2>
-        <ul>
-            <li>PYTHON</li>
-            <li>HTML</li>
-            <li>CSS</li>
-            <li>JAVA</li>
-        </ul>
+
+  <!-- CURSOR -->
+  <div class="cursor" id="cursor"></div>
+
+  <!-- NAV -->
+  <nav id="navbar">
+    <a class="logo" href="#">Ommi Mohan Krishan</a>
+    <ul class="nav-links">
+      <li><a href="#about">About</a></li>
+      <li><a href="#work">Work</a></li>
+      <li><a href="#services">Services</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+    <button class="hamburger" id="hamburger" aria-label="Menu">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+
+  <!-- MOBILE MENU -->
+  <div class="mobile-menu" id="mobileMenu">
+    <ul>
+      <li><a href="#about" class="mobile-link">About</a></li>
+      <li><a href="#work" class="mobile-link">Work</a></li>
+      <li><a href="#services" class="mobile-link">Services</a></li>
+      <li><a href="#contact" class="mobile-link">Contact</a></li>
+    </ul>
+  </div>
+
+  <!-- HERO -->
+  <section class="hero" id="home">
+    <div class="hero-bg"></div>
+    <div class="hero-content">
+      <p class="hero-eyebrow reveal">Open to full-time opportunities — 2026</p>
+      <h1 class="reveal">Creative <em>Designer</em><br>&amp; Developer</h1>
+      <p class="hero-sub reveal">I build clean, user-focused digital products and I'm looking for a team where I can contribute, grow, and do my best work.</p>
+      <div class="hero-cta reveal">
+        <a href="#work" class="btn btn-primary">View My Work</a>
+        <a href="resume.pdf" class="btn btn-ghost" target="_blank">Download CV</a>
+      </div>
     </div>
-    <div class="edu"></div>
-        <h2>Education</h2>
-        <ul>
-            <li>Bachelor's degree (AI&DS)</li>
-            <li>Diploma (ECE)</li>
-        </ul>
+    <div class="scroll-hint">
+      <span>Scroll</span>
+      <div class="scroll-line"></div>
     </div>
-    <div>
-        <h2>contact info</h2>
-        <p>Email:mohankrish110077@gmail.com</p>
-        <button><a href="www.linkedin.com/in/mohankrishna110077">Linked_in</a></button>
-        <p>Phn_no: 9100336743</p>
+  </section>
+
+  <!-- ABOUT -->
+  <section id="about">
+    <p class="section-label scroll-reveal">01 — About</p>
+    <div class="about-grid">
+      <h2 class="scroll-reveal">Designing with <em>intent</em>,<br>building with craft.</h2>
+      <div class="about-text scroll-reveal">
+        <p>Hi, I am Mohan currenty pursuing my Bachlore degree on Ai and Data Science</p>
+        <p>I'm currently looking for a full-time role where I can contribute to meaningful products, collaborate with a talented team, and work on large scale applicatiion. I thrive in fast-moving environments and care deeply about shipping quality work.</p>
+        <div class="skills">
+          <span class="skill-tag">Python</span>
+          <span class="skill-tag">Frontend Development</span>
+          <span class="skill-tag">Backend Development</span>
+          <span class="skill-tag">MySql</span>
+        </div>
+      </div>
     </div>
+  </section>
+
+  <!-- WORK -->
+  <section id="work">
+    <p class="section-label scroll-reveal">02 — Selected Work</p>
+    <div class="work-grid" id="workGrid">
+      <!-- Injected by JS -->
+    </div>
+  </section>
+
+  <!-- SERVICES -->
+  <section id="services">
+    <p class="section-label scroll-reveal">03 — Expertise</p>
+    <div class="services-list" id="servicesList">
+      <!-- Injected by JS -->
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact">
+    <p class="section-label scroll-reveal">04 — Contact</p>
+    <div class="contact-inner">
+      <div class="scroll-reveal">
+        <h2>Let's find the right <em>fit</em> together.</h2>
+        <p class="contact-sub">I'm actively looking for full-time opportunities. If you think I'd be a good addition to your team, I'd love to connect.</p>
+        <div class="contact-details">
+          <p><span>Email</span> mohankrish110077@gmail.com</p>
+          <p><span>Phn number</span>9100336743</p>
+          <p><span>Status</span> Actively job seeking</p>
+        </div>
+      </div>
+      <form class="contact-form scroll-reveal" id="contactForm" novalidate>
+        <input type="text" id="nameInput" placeholder="Your Name" required />
+        <input type="email" id="emailInput" placeholder="Your Email" required />
+        <input type="text" id="subjectInput" placeholder="Subject" />
+        <textarea id="messageInput" placeholder="Tell me about the role or your team..." required></textarea>
+        <button type="submit">Send Message →</button>
+        <p class="form-status" id="formStatus"></p>
+      </form>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <p>© 2026 Alex Morgan. All rights reserved.</p>
+    <div class="social-links">
+      <a href="#">Twitter</a>
+      <a href="#">LinkedIn</a>
+      <a href="#">GitHub</a>
+      <a href="#">Dribbble</a>
+    </div>
+  </footer>
+
+  <script src="javascript.js"></script>
 </body>
 </html>
